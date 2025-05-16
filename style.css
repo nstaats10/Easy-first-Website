@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #f4f4f4;
 }
 
 header {
@@ -29,10 +30,21 @@ button {
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
+    position: relative;
+    z-index: 1;
 }
 
-button:hover {
-    background-color: #45a049;
+.hover-message {
+    color: #4CAF50;
+    font-weight: bold;
+    visibility: hidden;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    transition: visibility 0.3s;
+}
+
+button:hover + .hover-message {
+    visibility: visible;
 }
 
 footer {
