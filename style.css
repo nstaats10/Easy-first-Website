@@ -1,36 +1,120 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Global Styles */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
+    --font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
     line-height: 1.6;
-    color: var(--text-color, #333);
-    background-color: var(--bg-color, #f4f4f4);
-    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Dark Mode Variables */
-body.dark-mode {
-    --bg-color: #121212;
-    --text-color: #e0e0e0;
-}
-
-/* Header Styles */
 header {
-    background: #333;
+    background: var(--primary-color);
     color: #fff;
-    padding: 1rem 0;
+    text-align: center;
+    padding: 2rem 0;
 }
 
-.sticky-nav {
-    position: sticky;
-    top: 0;
-    background: #333;
-    z-index: 1000;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+}
+
+.hero h2 {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1rem;
+}
+
+.services {
+    padding: 3rem 1rem;
+    background: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.service-item {
+    margin: 1rem auto;
+    max-width: 400px;
+    padding: 1rem;
+    background: var(--background-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+}
+
+.service-item h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.faq {
+    padding: 3rem 1rem;
+    background: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+details {
+    margin: 1rem 0;
+}
+
+details summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details p {
+    margin: 0.5rem 0 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
 }
 
 header nav {
