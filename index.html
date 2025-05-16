@@ -3,83 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Easy-first-Website, a modern and responsive website for your future projects.">
-    <meta name="keywords" content="Website, Responsive Design, HTML, CSS, Traffic, Blog, Testimonials">
+    <meta name="description" content="Easy-first-Website - A modern and responsive website.">
     <meta name="author" content="nstaats10">
-    <title>Easy-first-Website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Easy-first-Website</title>
 </head>
 <body>
     <header>
-        <nav class="sticky-nav">
-            <div class="logo">Easy-first-Website</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <label class="dark-mode-toggle">
-                <input type="checkbox" id="dark-mode-checkbox">
-                <span class="toggle-label">Dark Mode</span>
-            </label>
-        </nav>
+        <div class="container">
+            <h1>Welcome to Easy-first-Website</h1>
+            <p>Your journey to modern and responsive design starts here!</p>
+        </div>
     </header>
 
-    <section id="hero">
-        <h1>Welcome to Easy-first-Website</h1>
-        <p>Your journey to building amazing websites starts here.</p>
-        <a href="#about" class="btn">Learn More</a>
-    </section>
+    <main>
+        <section class="hero">
+            <h2>Modern Web Design</h2>
+            <p>Explore a clean and functional website layout.</p>
+        </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Easy-first-Website is a modern and responsive website template designed to kickstart your online presence.</p>
-    </section>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>Responsive Design</h3>
+                <p>Enjoy a layout that works on all devices!</p>
+            </div>
+            <div class="service-item">
+                <h3>Clean Aesthetics</h3>
+                <p>Simple yet elegant design for your needs.</p>
+            </div>
+        </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Web Design</li>
-            <li>SEO Optimization</li>
-            <li>Performance Enhancements</li>
-        </ul>
-    </section>
-
-    <section id="faq">
-        <h2>Frequently Asked Questions</h2>
-        <details>
-            <summary>What is Easy-first-Website?</summary>
-            <p>Easy-first-Website is a beginner-friendly template to help you create a professional website.</p>
-        </details>
-        <details>
-            <summary>How can I customize it?</summary>
-            <p>You can edit the HTML and CSS files in your project to fit your needs.</p>
-        </details>
-        <details>
-            <summary>Is this template free?</summary>
-            <p>Yes, the Easy-first-Website template is completely free to use and modify.</p>
-        </details>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form" action="https://example.com/submit" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-            
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
+        <section class="faq">
+            <h2>FAQs</h2>
+            <details>
+                <summary>What is Easy-first-Website?</summary>
+                <p>It is a modern, beginner-friendly website template.</p>
+            </details>
+            <details>
+                <summary>How can I use it?</summary>
+                <p>Feel free to fork, modify, and deploy it on GitHub Pages!</p>
+            </details>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Easy-first-Website. All rights reserved.</p>
+        <p>&copy; 2025 Easy-first-Website | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </footer>
 </body>
 </html>
